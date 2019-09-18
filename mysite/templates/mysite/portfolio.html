@@ -1,0 +1,39 @@
+{% extends 'mysite/base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="container" style="margin-top: 100px">
+        <div class="card-deck">
+            <div class="card">
+                <img class="card-img-top" src="{% static 'mysite/images/spacex.png' %}" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">SpaceX</h5>
+                    <p class="card-text">Explore the Galaxy..</p>
+                    <p class="card-text">
+                        <small class="text-muted">Space Explorer</small>
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="{% static 'mysite/images/google.png' %}" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Google</h5>
+                    <p class="card-text">Explore the Depth of Knowledge</p>
+                    <p class="card-text">
+                        <small class="text-muted">Worlds Search Engine</small>
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="{% static 'mysite/images/amazon.png' %}" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"></h5>
+                    <p class="card-text">Sell anything .Buy anything</p>
+                    <p class="card-text">
+                        <small class="text-muted">Ecommerce King</small>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
